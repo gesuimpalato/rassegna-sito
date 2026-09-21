@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Le notizie globali che contano, per tipologia: geopolitica, economia, informatica.">
 <meta name="theme-color" content="#0f1115">
+
+<!-- Su iPhone il manifest da solo non basta: senza questi tag l'icona in
+     schermata Home aprirebbe Safari con la barra degli indirizzi invece
+     dell'app a schermo intero. "black-translucent" manda il contenuto sotto
+     la barra di stato, e la testata la compensa con env(safe-area-inset-top). -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Rassegna">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>Rassegna — notizie globali per tipologia</title>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icona.svg" type="image/svg+xml">
