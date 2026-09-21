@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Le notizie globali che contano, per tipologia: geopolitica, economia, informatica.">
+<meta name="theme-color" content="#0f1115">
+<title>Rassegna — notizie globali per tipologia</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icona.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icona-180.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="testata" id="testata">
+  <div class="testata-riga">
+    <a class="marchio" href="#/" aria-label="Torna al feed">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h11v3H4zM4 10h11v2H4zM4 14h7v2H4zM17 5h3v11h-3z"/></svg>
+      <span>Rassegna</span>
+    </a>
+    <div class="azioni-testata">
+      <button class="icona-btn" id="btn-aggiorna" title="Aggiorna le notizie" aria-label="Aggiorna le notizie" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5V2L8 6l4 4V7a5 5 0 1 1-5 5H5a7 7 0 1 0 7-7z"/></svg>
+      </button>
+      <button class="icona-btn" id="btn-tema" title="Cambia tema" aria-label="Cambia tema">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="barra-ricerca">
+    <svg class="lente" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4a6 6 0 1 0 3.5 10.9l4.3 4.3 1.4-1.4-4.3-4.3A6 6 0 0 0 10 4zm0 2a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"/></svg>
+    <input id="ricerca" type="search" placeholder="Cerca nei titoli…" autocomplete="off"
+           aria-label="Cerca negli articoli" enterkeyhint="search">
+    <button class="pulisci" id="pulisci-ricerca" hidden aria-label="Cancella la ricerca">&times;</button>
+  </div>
+
+  <nav class="categorie" id="categorie" aria-label="Categorie"></nav>
+
+  <div class="riga-filtri">
+    <div class="chip-attivi" id="chip-attivi"></div>
+    <button class="link-filtri" id="apri-filtri" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v2l-7 7v5l-4 2v-7L3 7z"/></svg>
+      <span>Filtri</span><span class="conta-filtri" id="conta-filtri" hidden>0</span>
+    </button>
+  </div>
+</header>
+
+<!-- pannello dei filtri per tag -->
+<div class="velo" id="velo" hidden></div>
+<aside class="pannello" id="pannello" hidden aria-label="Filtri per tag">
+  <div class="pannello-testata">
+    <h2>Filtra per tag</h2>
+    <button class="icona-btn" id="chiudi-filtri" aria-label="Chiudi i filtri">&times;</button>
+  </div>
+  <p class="pannello-nota">Un articolo può avere più tag. Selezionandone più di uno vedrai gli articoli che li contengono <strong>tutti</strong>.</p>
+  <div class="modo-filtro">
+    <label><input type="radio" name="modo" value="tutti" checked> Tutti i tag</label>
+    <label><input type="radio" name="modo" value="qualsiasi"> Almeno uno</label>
+  </div>
+  <div id="gruppi-tag"></div>
+  <div class="pannello-piede">
+    <button class="btn-secondario" id="azzera-filtri">Azzera</button>
+    <button class="btn-primario" id="applica-filtri">Mostra risultati</button>
+  </div>
+</aside>
+
+<main id="app">
+  <div class="stato" id="stato">Carico le notizie…</div>
+  <section class="feed" id="feed" aria-live="polite"></section>
+  <button class="carica-altro" id="carica-altro" hidden>Carica altre notizie</button>
+</main>
+
+<!-- lettore dell'articolo -->
+<section class="lettore" id="lettore" hidden aria-label="Articolo">
+  <div class="lettore-barra">
+    <button class="icona-btn" id="chiudi-lettore" aria-label="Torna al feed">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7z"/></svg>
+    </button>
+    <span id="lettore-fonte"></span>
+  </div>
+  <article class="lettore-corpo" id="lettore-corpo"></article>
+</section>
+
+<footer class="pie">
+  <span id="pie-info"></span>
+  <a href="#/fonti">Fonti</a>
+</footer>
+
+<script src="aggregatore.js"></script>
+<script src="dati.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

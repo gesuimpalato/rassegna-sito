@@ -1,0 +1,884 @@
+{
+ "categorie": {
+  "geopolitica": "Geopolitica",
+  "economia": "Economia",
+  "informatica": "Informatica"
+ },
+ "continenti": {
+  "europa": "Europa",
+  "americhe": "Americhe",
+  "asia": "Asia",
+  "africa": "Africa",
+  "oceania": "Oceania",
+  "medio-oriente": "Medio Oriente"
+ },
+ "ambito_globale": {
+  "mondo": "Mondo"
+ },
+ "nazioni": {
+  "italia": {
+   "label": "Italia",
+   "continente": "europa",
+   "chiavi": [
+    "italia",
+    "italy",
+    "italie",
+    "italian",
+    "italiano",
+    "italiana",
+    "roma",
+    "meloni"
+   ],
+   "sigle": []
+  },
+  "usa": {
+   "label": "Stati Uniti",
+   "continente": "americhe",
+   "chiavi": [
+    "united states",
+    "america",
+    "american",
+    "americana",
+    "washington",
+    "stati uniti",
+    "etats-unis",
+    "trump",
+    "white house",
+    "casa bianca",
+    "pentagon",
+    "congress"
+   ],
+   "sigle": [
+    "US",
+    "U.S.",
+    "USA"
+   ]
+  },
+  "cina": {
+   "label": "Cina",
+   "continente": "asia",
+   "chiavi": [
+    "china",
+    "chinese",
+    "cina",
+    "chine",
+    "cinese",
+    "cinesi",
+    "pechino",
+    "beijing",
+    "xi jinping",
+    "shanghai"
+   ],
+   "sigle": []
+  },
+  "russia": {
+   "label": "Russia",
+   "continente": "europa",
+   "chiavi": [
+    "russia",
+    "russian",
+    "russie",
+    "russo",
+    "russa",
+    "mosca",
+    "moscow",
+    "putin",
+    "cremlino",
+    "kremlin"
+   ],
+   "sigle": []
+  },
+  "ucraina": {
+   "label": "Ucraina",
+   "continente": "europa",
+   "chiavi": [
+    "ukraine",
+    "ukrainian",
+    "ucraina",
+    "ucraino",
+    "kyiv",
+    "kiev",
+    "zelensky",
+    "zelenskyy"
+   ],
+   "sigle": []
+  },
+  "israele": {
+   "label": "Israele",
+   "continente": "medio-oriente",
+   "chiavi": [
+    "israel",
+    "israeli",
+    "israele",
+    "israeliano",
+    "netanyahu",
+    "tel aviv",
+    "gerusalemme",
+    "jerusalem"
+   ],
+   "sigle": [
+    "IDF"
+   ]
+  },
+  "palestina": {
+   "label": "Palestina",
+   "continente": "medio-oriente",
+   "chiavi": [
+    "palestina",
+    "palestine",
+    "palestinian",
+    "palestinese",
+    "palestinesi",
+    "gaza",
+    "west bank",
+    "cisgiordania",
+    "hamas"
+   ],
+   "sigle": []
+  },
+  "iran": {
+   "label": "Iran",
+   "continente": "medio-oriente",
+   "chiavi": [
+    "iran",
+    "iranian",
+    "iraniano",
+    "teheran",
+    "tehran",
+    "khamenei"
+   ],
+   "sigle": []
+  },
+  "arabia-saudita": {
+   "label": "Arabia Saudita",
+   "continente": "medio-oriente",
+   "chiavi": [
+    "saudi",
+    "arabia saudita",
+    "riyadh",
+    "ryad"
+   ],
+   "sigle": []
+  },
+  "francia": {
+   "label": "Francia",
+   "continente": "europa",
+   "chiavi": [
+    "france",
+    "french",
+    "francia",
+    "francese",
+    "parigi",
+    "paris",
+    "macron",
+    "francais"
+   ],
+   "sigle": []
+  },
+  "germania": {
+   "label": "Germania",
+   "continente": "europa",
+   "chiavi": [
+    "germany",
+    "german",
+    "germania",
+    "tedesc*",
+    "allemagne",
+    "berlino",
+    "berlin",
+    "merz",
+    "scholz",
+    "bundesbank"
+   ],
+   "sigle": []
+  },
+  "regno-unito": {
+   "label": "Regno Unito",
+   "continente": "europa",
+   "chiavi": [
+    "britain",
+    "british",
+    "regno unito",
+    "britannico",
+    "britannica",
+    "royaume-uni",
+    "london",
+    "londra",
+    "westminster",
+    "starmer"
+   ],
+   "sigle": [
+    "UK",
+    "U.K."
+   ]
+  },
+  "spagna": {
+   "label": "Spagna",
+   "continente": "europa",
+   "chiavi": [
+    "spain",
+    "spanish",
+    "spagna",
+    "spagnolo",
+    "espagne",
+    "madrid",
+    "sanchez"
+   ],
+   "sigle": []
+  },
+  "india": {
+   "label": "India",
+   "continente": "asia",
+   "chiavi": [
+    "india",
+    "indian",
+    "indiano",
+    "inde",
+    "new delhi",
+    "modi"
+   ],
+   "sigle": []
+  },
+  "giappone": {
+   "label": "Giappone",
+   "continente": "asia",
+   "chiavi": [
+    "japan",
+    "japanese",
+    "giappone",
+    "giapponese",
+    "japon",
+    "tokyo"
+   ],
+   "sigle": []
+  },
+  "corea-del-sud": {
+   "label": "Corea del Sud",
+   "continente": "asia",
+   "chiavi": [
+    "south korea",
+    "corea del sud",
+    "seoul",
+    "coree du sud"
+   ],
+   "sigle": []
+  },
+  "corea-del-nord": {
+   "label": "Corea del Nord",
+   "continente": "asia",
+   "chiavi": [
+    "north korea",
+    "corea del nord",
+    "pyongyang",
+    "kim jong"
+   ],
+   "sigle": []
+  },
+  "taiwan": {
+   "label": "Taiwan",
+   "continente": "asia",
+   "chiavi": [
+    "taiwan",
+    "taipei",
+    "taiwanese"
+   ],
+   "sigle": []
+  },
+  "brasile": {
+   "label": "Brasile",
+   "continente": "americhe",
+   "chiavi": [
+    "brazil",
+    "brasile",
+    "brasiliano",
+    "bresil",
+    "brasilia",
+    "lula"
+   ],
+   "sigle": []
+  },
+  "messico": {
+   "label": "Messico",
+   "continente": "americhe",
+   "chiavi": [
+    "mexico",
+    "messico",
+    "mexique",
+    "messicano",
+    "sheinbaum"
+   ],
+   "sigle": []
+  },
+  "canada": {
+   "label": "Canada",
+   "continente": "americhe",
+   "chiavi": [
+    "canada",
+    "canadian",
+    "canadese",
+    "ottawa",
+    "carney",
+    "canadien"
+   ],
+   "sigle": []
+  },
+  "argentina": {
+   "label": "Argentina",
+   "continente": "americhe",
+   "chiavi": [
+    "argentina",
+    "argentino",
+    "buenos aires",
+    "milei"
+   ],
+   "sigle": []
+  },
+  "venezuela": {
+   "label": "Venezuela",
+   "continente": "americhe",
+   "chiavi": [
+    "venezuela",
+    "venezuelano",
+    "caracas",
+    "maduro"
+   ],
+   "sigle": []
+  },
+  "turchia": {
+   "label": "Turchia",
+   "continente": "asia",
+   "chiavi": [
+    "turkey",
+    "turchia",
+    "turco",
+    "turquie",
+    "ankara",
+    "erdogan",
+    "istanbul"
+   ],
+   "sigle": []
+  },
+  "egitto": {
+   "label": "Egitto",
+   "continente": "africa",
+   "chiavi": [
+    "egypt",
+    "egitto",
+    "egiziano",
+    "egypte",
+    "cairo"
+   ],
+   "sigle": []
+  },
+  "nigeria": {
+   "label": "Nigeria",
+   "continente": "africa",
+   "chiavi": [
+    "nigeria",
+    "nigeriano",
+    "abuja",
+    "lagos"
+   ],
+   "sigle": []
+  },
+  "sudafrica": {
+   "label": "Sudafrica",
+   "continente": "africa",
+   "chiavi": [
+    "south africa",
+    "sudafrica",
+    "afrique du sud",
+    "johannesburg",
+    "pretoria"
+   ],
+   "sigle": []
+  },
+  "australia": {
+   "label": "Australia",
+   "continente": "oceania",
+   "chiavi": [
+    "australia",
+    "australian",
+    "australiano",
+    "canberra",
+    "sydney"
+   ],
+   "sigle": []
+  },
+  "unione-europea": {
+   "label": "Unione Europea",
+   "continente": "europa",
+   "chiavi": [
+    "european union",
+    "unione europea",
+    "union europeenne",
+    "bruxelles",
+    "brussels",
+    "european commission",
+    "commissione europea",
+    "eurozona",
+    "eurozone"
+   ],
+   "sigle": [
+    "UE",
+    "EU",
+    "BCE",
+    "ECB"
+   ]
+  }
+ },
+ "temi": {
+  "ai": {
+   "label": "Intelligenza artificiale",
+   "categoria": "informatica",
+   "chiavi": [
+    "artificial intelligence",
+    "intelligenza artificiale",
+    "intelligence artificielle",
+    "machine learning",
+    "deep learning",
+    "large language model",
+    "chatgpt",
+    "openai",
+    "anthropic",
+    "gemini",
+    "deepseek",
+    "neural network",
+    "rete neurale",
+    "transformer",
+    "generative ai",
+    "chatbot",
+    "copilot"
+   ],
+   "sigle": [
+    "AI",
+    "A.I.",
+    "LLM",
+    "LLMs",
+    "GPT",
+    "AGI"
+   ]
+  },
+  "quantum-computing": {
+   "label": "Quantum computing",
+   "categoria": "informatica",
+   "chiavi": [
+    "quantum comput*",
+    "quantum bit",
+    "qubit",
+    "quantistic*",
+    "quantum advantage",
+    "quantum supremacy",
+    "informatica quantistica",
+    "calcolo quantistico",
+    "ordinateur quantique"
+   ],
+   "sigle": []
+  },
+  "bioinformatica": {
+   "label": "Bioinformatica",
+   "categoria": "informatica",
+   "chiavi": [
+    "bioinformatic*",
+    "bioinformatica",
+    "genomic",
+    "genoma",
+    "genome",
+    "dna sequencing",
+    "sequenziament*",
+    "protein folding",
+    "alphafold",
+    "computational biolog*",
+    "biologia computazionale",
+    "crispr",
+    "proteomic*"
+   ],
+   "sigle": []
+  },
+  "morphing": {
+   "label": "Morphing e media sintetici",
+   "categoria": "informatica",
+   "chiavi": [
+    "morphing",
+    "deepfake",
+    "deep fake",
+    "face swap",
+    "synthetic media",
+    "media sintetici",
+    "image synthesis",
+    "generative video",
+    "video generativo",
+    "text-to-video",
+    "text-to-image",
+    "diffusion model",
+    "modello di diffusione*"
+   ],
+   "sigle": []
+  },
+  "videogiochi": {
+   "label": "Videogiochi",
+   "categoria": "informatica",
+   "chiavi": [
+    "video game",
+    "videogame",
+    "videogioc*",
+    "gaming",
+    "playstation",
+    "xbox",
+    "nintendo",
+    "steam deck",
+    "esport",
+    "game studio",
+    "game developer"
+   ],
+   "sigle": []
+  },
+  "cybersecurity": {
+   "label": "Cybersicurezza",
+   "categoria": "informatica",
+   "chiavi": [
+    "cybersecurity",
+    "cyberattack",
+    "cyberattacc*",
+    "cybersicurezza",
+    "ransomware",
+    "malware",
+    "data breach",
+    "vulnerabilit*",
+    "hacker",
+    "exploit",
+    "zero-day",
+    "phishing",
+    "spyware"
+   ],
+   "sigle": []
+  },
+  "hardware": {
+   "label": "Hardware e chip",
+   "categoria": "informatica",
+   "chiavi": [
+    "chip",
+    "semiconductor",
+    "semicondutt*",
+    "processor*",
+    "nvidia",
+    "tsmc",
+    "asml",
+    "intel",
+    "data center",
+    "datacenter",
+    "scheda grafica"
+   ],
+   "sigle": [
+    "GPU",
+    "CPU",
+    "AMD",
+    "RAM"
+   ]
+  },
+  "software": {
+   "label": "Software e piattaforme",
+   "categoria": "informatica",
+   "chiavi": [
+    "software",
+    "operating system",
+    "sistema operativo",
+    "open source",
+    "programming language",
+    "linguaggio di programmazione",
+    "developer",
+    "sviluppator*",
+    "cloud comput*",
+    "kubernetes",
+    "linux",
+    "windows 11"
+   ],
+   "sigle": [
+    "API",
+    "SDK"
+   ]
+  },
+  "ricerca": {
+   "label": "Ricerca",
+   "categoria": "informatica",
+   "chiavi": [
+    "peer-review",
+    "algorithm",
+    "algoritm*",
+    "theorem",
+    "teorem*",
+    "mathematician",
+    "matematic*",
+    "mathematics",
+    "matematica",
+    "scientific study",
+    "studio scientifico",
+    "researchers",
+    "ricercatori"
+   ],
+   "sigle": []
+  },
+  "mercati": {
+   "label": "Mercati",
+   "categoria": "economia",
+   "chiavi": [
+    "stock market",
+    "stocks",
+    "borsa",
+    "mercati",
+    "listino",
+    "wall street",
+    "nasdaq",
+    "dow jones",
+    "ftse",
+    "azioni",
+    "bond",
+    "obbligazion*",
+    "yield",
+    "rendiment*",
+    "share price",
+    "sell-off",
+    "rally"
+   ],
+   "sigle": [
+    "S&P",
+    "MIB"
+   ]
+  },
+  "banche-centrali": {
+   "label": "Banche centrali",
+   "categoria": "economia",
+   "chiavi": [
+    "central bank",
+    "banca centrale",
+    "federal reserve",
+    "bank of england",
+    "bank of japan",
+    "interest rate",
+    "tasso di interesse",
+    "tassi di interesse",
+    "monetary policy",
+    "politica monetaria",
+    "inflation",
+    "inflazion*",
+    "quantitative easing",
+    "lagarde",
+    "powell"
+   ],
+   "sigle": [
+    "BCE",
+    "ECB",
+    "Fed",
+    "BoE"
+   ]
+  },
+  "rating": {
+   "label": "Agenzie di rating",
+   "categoria": "economia",
+   "chiavi": [
+    "rating agency",
+    "agenzia di rating",
+    "moody",
+    "standard & poor",
+    "s&p global",
+    "fitch ratings",
+    "downgrade",
+    "declassament*",
+    "credit rating",
+    "merito creditizio",
+    "outlook negativo"
+   ],
+   "sigle": []
+  },
+  "commercio": {
+   "label": "Commercio e dazi",
+   "categoria": "economia",
+   "chiavi": [
+    "trade deal",
+    "accordo commerciale",
+    "tariff",
+    "dazi",
+    "trade war",
+    "guerra commerciale",
+    "export",
+    "import",
+    "sanction",
+    "sanzion*",
+    "embargo",
+    "supply chain",
+    "catena di fornitura",
+    "free trade"
+   ],
+   "sigle": [
+    "WTO",
+    "OMC"
+   ]
+  },
+  "energia": {
+   "label": "Energia",
+   "categoria": "economia",
+   "chiavi": [
+    "oil",
+    "petrolio",
+    "gas",
+    "opec",
+    "energy price",
+    "prezzo dell'energia",
+    "pipeline",
+    "gasdott*",
+    "renewable",
+    "rinnovabil*",
+    "nuclear plant",
+    "centrale nucleare",
+    "electricity",
+    "elettricit*"
+   ],
+   "sigle": [
+    "LNG",
+    "OPEC"
+   ]
+  },
+  "lavoro": {
+   "label": "Lavoro",
+   "categoria": "economia",
+   "chiavi": [
+    "unemployment",
+    "disoccupazion*",
+    "jobs report",
+    "occupazione",
+    "layoff",
+    "licenziament*",
+    "wages",
+    "salari",
+    "strike",
+    "scioper*",
+    "labour market",
+    "mercato del lavoro"
+   ],
+   "sigle": []
+  },
+  "conflitti": {
+   "label": "Conflitti",
+   "categoria": "geopolitica",
+   "chiavi": [
+    "war",
+    "guerra",
+    "conflict",
+    "conflitt",
+    "military",
+    "militar*",
+    "missil*",
+    "dron*",
+    "airstrike",
+    "raid",
+    "troops",
+    "truppe",
+    "ceasefire",
+    "cessate il fuoco",
+    "offensive",
+    "offensiva",
+    "invasion",
+    "invasione",
+    "armi",
+    "weapons",
+    "battle",
+    "battagli*"
+   ],
+   "sigle": []
+  },
+  "diplomazia": {
+   "label": "Diplomazia",
+   "categoria": "geopolitica",
+   "chiavi": [
+    "summit",
+    "vertic*",
+    "treaty",
+    "trattat*",
+    "diplomat*",
+    "diplomazia",
+    "negotiation",
+    "negoziat*",
+    "talks",
+    "colloqui",
+    "alliance",
+    "alleanz*",
+    "united nations",
+    "nazioni unite",
+    "bilateral"
+   ],
+   "sigle": [
+    "NATO",
+    "ONU",
+    "UN",
+    "G7",
+    "G20"
+   ]
+  },
+  "elezioni": {
+   "label": "Elezioni",
+   "categoria": "geopolitica",
+   "chiavi": [
+    "election",
+    "elezion*",
+    "voters",
+    "elettori",
+    "ballot",
+    "referendum",
+    "sondagg",
+    "candidate",
+    "candidat*",
+    "parliament",
+    "parlament*",
+    "coalition",
+    "coalizion*",
+    "primaries",
+    "primarie"
+   ],
+   "sigle": []
+  },
+  "migrazioni": {
+   "label": "Migrazioni",
+   "categoria": "geopolitica",
+   "chiavi": [
+    "migrant",
+    "migrante",
+    "migranti",
+    "immigration",
+    "immigrazion*",
+    "refugee",
+    "rifugiat*",
+    "asylum",
+    "asilo",
+    "deport*",
+    "border control",
+    "frontier*"
+   ],
+   "sigle": []
+  },
+  "clima": {
+   "label": "Clima e ambiente",
+   "categoria": "geopolitica",
+   "chiavi": [
+    "climate",
+    "clima",
+    "emission*",
+    "emissioni",
+    "global warming",
+    "riscaldamento globale",
+    "carbon",
+    "carbonio",
+    "wildfire",
+    "incendi*",
+    "flood",
+    "alluvion*",
+    "drought",
+    "siccit*"
+   ],
+   "sigle": [
+    "COP29",
+    "COP30",
+    "COP31"
+   ]
+  }
+ }
+}

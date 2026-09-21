@@ -1,0 +1,50 @@
+{
+  "_comment": "Catalogo delle fonti. weight = autorevolezza (0-1) usata nel punteggio di importanza. scope = mondo | continente | nazione.",
+  "sources": [
+    {"id":"nyt-world","name":"The New York Times — World","publisher":"The New York Times","url":"https://rss.nytimes.com/services/xml/rss/nyt/World.xml","lang":"en","weight":1.0,"scope":"mondo","categories":["geopolitica"],"tags":["mondo"]},
+    {"id":"nyt-business","name":"The New York Times — Business","publisher":"The New York Times","url":"https://rss.nytimes.com/services/xml/rss/nyt/Business.xml","lang":"en","weight":1.0,"scope":"mondo","categories":["economia"],"tags":["mondo"]},
+    {"id":"nyt-europe","name":"The New York Times — Europe","publisher":"The New York Times","url":"https://rss.nytimes.com/services/xml/rss/nyt/Europe.xml","lang":"en","weight":1.0,"scope":"continente","categories":["geopolitica"],"tags":["europa"]},
+    {"id":"nyt-asia","name":"The New York Times — Asia Pacific","publisher":"The New York Times","url":"https://rss.nytimes.com/services/xml/rss/nyt/AsiaPacific.xml","lang":"en","weight":1.0,"scope":"continente","categories":["geopolitica"],"tags":["asia"]},
+    {"id":"nyt-africa","name":"The New York Times — Africa","publisher":"The New York Times","url":"https://rss.nytimes.com/services/xml/rss/nyt/Africa.xml","lang":"en","weight":1.0,"scope":"continente","categories":["geopolitica"],"tags":["africa"]},
+    {"id":"nyt-americas","name":"The New York Times — Americas","publisher":"The New York Times","url":"https://rss.nytimes.com/services/xml/rss/nyt/Americas.xml","lang":"en","weight":1.0,"scope":"continente","categories":["geopolitica"],"tags":["americhe"]},
+    {"id":"nyt-mideast","name":"The New York Times — Middle East","publisher":"The New York Times","url":"https://rss.nytimes.com/services/xml/rss/nyt/MiddleEast.xml","lang":"en","weight":1.0,"scope":"continente","categories":["geopolitica"],"tags":["medio-oriente"]},
+    {"id":"nyt-tech","name":"The New York Times — Technology","publisher":"The New York Times","url":"https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml","lang":"en","weight":0.9,"scope":"mondo","categories":["informatica"],"tags":["mondo"]},
+
+    {"id":"ft-home","name":"Financial Times — Home","publisher":"Financial Times","url":"https://www.ft.com/rss/home","lang":"en","weight":1.0,"scope":"mondo","categories":["economia","geopolitica"],"tags":["mondo"]},
+    {"id":"ft-world","name":"Financial Times — World","publisher":"Financial Times","url":"https://www.ft.com/world?format=rss","lang":"en","weight":1.0,"scope":"mondo","categories":["geopolitica","economia"],"tags":["mondo"]},
+
+    {"id":"wsj-world","name":"The Wall Street Journal — World","publisher":"The Wall Street Journal","url":"https://feeds.a.dj.com/rss/RSSWorldNews.xml","lang":"en","weight":1.0,"scope":"mondo","categories":["geopolitica"],"tags":["mondo"]},
+    {"id":"wsj-markets","name":"The Wall Street Journal — Markets","publisher":"The Wall Street Journal","url":"https://feeds.a.dj.com/rss/RSSMarketsMain.xml","lang":"en","weight":1.0,"scope":"mondo","categories":["economia"],"tags":["mondo","mercati"]},
+    {"id":"wsj-tech","name":"The Wall Street Journal — Tech","publisher":"The Wall Street Journal","url":"https://feeds.a.dj.com/rss/RSSWSJD.xml","lang":"en","weight":0.9,"scope":"mondo","categories":["informatica"],"tags":["mondo"]},
+
+    {"id":"lemonde-intl","name":"Le Monde — International","publisher":"Le Monde","url":"https://www.lemonde.fr/international/rss_full.xml","lang":"fr","weight":1.0,"scope":"mondo","categories":["geopolitica"],"tags":["mondo","europa"]},
+    {"id":"lemonde-eco","name":"Le Monde — Économie","publisher":"Le Monde","url":"https://www.lemonde.fr/economie/rss_full.xml","lang":"fr","weight":1.0,"scope":"mondo","categories":["economia"],"tags":["mondo","europa"]},
+
+    {"id":"guardian-world","name":"The Guardian — World","publisher":"The Guardian","url":"https://www.theguardian.com/world/rss","lang":"en","weight":0.95,"scope":"mondo","categories":["geopolitica"],"tags":["mondo"]},
+    {"id":"guardian-business","name":"The Guardian — Business","publisher":"The Guardian","url":"https://www.theguardian.com/uk/business/rss","lang":"en","weight":0.95,"scope":"mondo","categories":["economia"],"tags":["mondo"]},
+
+    {"id":"aljazeera","name":"Al Jazeera","publisher":"Al Jazeera","url":"https://www.aljazeera.com/xml/rss/all.xml","lang":"en","weight":0.85,"scope":"mondo","categories":["geopolitica"],"tags":["mondo","medio-oriente"]},
+    {"id":"dw-world","name":"Deutsche Welle — World","publisher":"Deutsche Welle","url":"https://rss.dw.com/rdf/rss-en-world","lang":"en","weight":0.85,"scope":"mondo","categories":["geopolitica"],"tags":["mondo","europa"]},
+    {"id":"france24","name":"France 24","publisher":"France 24","url":"https://www.france24.com/en/rss","lang":"en","weight":0.85,"scope":"mondo","categories":["geopolitica"],"tags":["mondo","europa"]},
+
+    {"id":"ansa-mondo","name":"ANSA — Mondo","publisher":"ANSA","url":"https://www.ansa.it/sito/notizie/mondo/mondo_rss.xml","lang":"it","weight":0.8,"scope":"nazione","categories":["geopolitica"],"tags":["italia"]},
+    {"id":"ansa-economia","name":"ANSA — Economia","publisher":"ANSA","url":"https://www.ansa.it/sito/notizie/economia/economia_rss.xml","lang":"it","weight":0.8,"scope":"nazione","categories":["economia"],"tags":["italia"]},
+    {"id":"sole24ore","name":"Il Sole 24 Ore — Mondo","publisher":"Il Sole 24 Ore","url":"https://www.ilsole24ore.com/rss/mondo.xml","lang":"it","weight":0.85,"scope":"nazione","categories":["economia","geopolitica"],"tags":["italia"]},
+    {"id":"repubblica-esteri","name":"la Repubblica — Esteri","publisher":"la Repubblica","url":"https://www.repubblica.it/rss/esteri/rss2.0.xml","lang":"it","weight":0.75,"scope":"nazione","categories":["geopolitica"],"tags":["italia"]},
+    {"id":"corriere-esteri","name":"Corriere della Sera — Esteri","publisher":"Corriere della Sera","url":"https://xml2.corriereobjects.it/rss/esteri.xml","lang":"it","weight":0.75,"scope":"nazione","categories":["geopolitica"],"tags":["italia"]},
+
+    {"id":"cacm","name":"Communications of the ACM","publisher":"ACM","url":"https://cacm.acm.org/feed/","lang":"en","weight":1.0,"scope":"mondo","categories":["informatica"],"tags":["ricerca"]},
+    {"id":"ieee-spectrum","name":"IEEE Spectrum","publisher":"IEEE","url":"https://spectrum.ieee.org/feeds/feed.rss","lang":"en","weight":0.95,"scope":"mondo","categories":["informatica"],"tags":["ricerca"]},
+    {"id":"mit-tr","name":"MIT Technology Review","publisher":"MIT","url":"https://www.technologyreview.com/feed/","lang":"en","weight":0.95,"scope":"mondo","categories":["informatica"],"tags":["ricerca"]},
+    {"id":"quanta","name":"Quanta Magazine","publisher":"Quanta Magazine","url":"https://api.quantamagazine.org/feed/","lang":"en","weight":0.95,"scope":"mondo","categories":["informatica"],"tags":["ricerca"]},
+    {"id":"arstechnica","name":"Ars Technica","publisher":"Ars Technica","url":"https://feeds.arstechnica.com/arstechnica/index","lang":"en","weight":0.9,"scope":"mondo","categories":["informatica"],"tags":[]},
+    {"id":"wired","name":"Wired","publisher":"Wired","url":"https://www.wired.com/feed/rss","lang":"en","weight":0.85,"scope":"mondo","categories":["informatica"],"tags":[]},
+    {"id":"pcworld","name":"PCWorld","publisher":"PCWorld","url":"https://www.pcworld.com/feed","lang":"en","weight":0.7,"scope":"mondo","categories":["informatica"],"tags":["hardware"]},
+    {"id":"dday","name":"DDay.it","publisher":"DDay.it","url":"https://www.dday.it/rss","lang":"it","weight":0.75,"scope":"nazione","categories":["informatica"],"tags":["italia"]},
+    {"id":"nature","name":"Nature — News","publisher":"Nature","url":"https://www.nature.com/nature.rss","lang":"en","weight":0.9,"scope":"mondo","categories":["informatica"],"tags":["ricerca","bioinformatica"]}
+  ],
+  "disabled": [
+    {"id":"the-times","name":"The Times (UK)","reason":"Nessun feed RSS pubblico: https://www.thetimes.co.uk/rss restituisce 404. Sostituito con The Guardian come quotidiano britannico ad accesso libero.","url":"https://www.thetimes.co.uk/rss"},
+    {"id":"pcmag","name":"PC Magazine","reason":"Il feed risponde 403 (blocco anti-bot) alle richieste automatizzate. PCWorld copre lo stesso ambito.","url":"https://www.pcmag.com/feeds/rss/latest"}
+  ]
+}

@@ -1,0 +1,63 @@
+name: Aggiorna e pubblica
+
+# Rigenera il feed e ripubblica il sito. Su repository pubblico i minuti di
+# GitHub Actions sono illimitati, quindi il lavoro periodico vive qui e non
+# intacca la quota del repository privato con il codice dell'app.
+on:
+  schedule:
+    - cron: '7,37 * * * *'     # due volte l'ora, sfasato per non cadere sul minuto zero
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Se parte un aggiornamento mentre il precedente e' in corso, si lascia
+# finire quello nuovo e si annulla il vecchio: pubblicare due volte di fila
+# non avrebbe senso.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  pubblica:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Test di regressione sui tag
+        run: python3 test_taxonomy.py
+
+      - name: Scarica le notizie e genera il feed
+        run: python3 aggregator.py --max-per-feed 40
+
+      - name: Quante notizie sono uscite
+        run: |
+          python3 - <<'PY'
+          import json
+          d = json.load(open("web/data/feed.json", encoding="utf-8"))
+          ok = sum(1 for x in d["diagnostica"] if not x["errore"])
+          print(f"{d['totale']} notizie da {ok}/{len(d['diagnostica'])} fonti")
+          for x in d["diagnostica"]:
+              if x["errore"]:
+                  print(f"  non raggiunta: {x['nome']} — {x['errore']}")
+          PY
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
